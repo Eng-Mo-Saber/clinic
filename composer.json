@@ -1,0 +1,16 @@
+{
+    "name": "eraasoft-300/clinic",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamed"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
