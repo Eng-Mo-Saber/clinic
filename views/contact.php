@@ -3,12 +3,12 @@
 
         <!-- header  -->
          
-<?php include 'header.php'; ?> 
+
 
 <body>
     <div class="page-wrapper">
         <!-- Navbar  -->
-        <?php include 'nav.php'; ?>
+
 
         <div class="container">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="fw-bold my-4 h4">
@@ -48,7 +48,7 @@
     </div>
 
     <!-- Footer  -->
-    <?php include 'footer.php'; ?>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
         integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="

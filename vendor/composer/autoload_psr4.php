@@ -6,5 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Database\\Migrations\\' => array($baseDir . '/database/migrations'),
+    'Database\\' => array($baseDir . '/database'),
+    'Controller\\DashBoard\\' => array($baseDir . '/controller/dashboard'),
     'App\\' => array($baseDir . '/app'),
 );

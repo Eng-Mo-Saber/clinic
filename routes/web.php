@@ -4,24 +4,33 @@ $page = isset($_GET['page']) ? $_GET['page'] : "home";
 
 switch ($page) {
     case "home":
-        require_once "views/home.php";
+        require "../views/home.php";
         break;
     case "contact":
-        require_once "views/contact.php";
+        require "../views/contact.php";
         break;
     case "history":
-        require_once "views/history.php";
+        require "views/history.php";
         break;
     case "login":
-        require_once "views/login.php";
+        require "../views/login.php";
         break;
     case "majors":
-        require_once "views/majors.php";
+        require "../views/majors.php";
         break;
     case "register":
-        require_once "views/register.php";
+        require "../views/register.php";
         break;
-    default:
-        require_once "views/404.php"; 
+    case "doctor":
+        require "../views/doctors/doctor.php";
         break;
+    case "reservation":
+        require "../views/doctors/reservation.php";
+        break;
+    case "logout":
+        require "../controlle/logout.php";
+        break;
+    // default:
+    //     require "views/404.php"; 
+    //     break;
 }

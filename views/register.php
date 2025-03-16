@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <!-- header  -->
-<?php include 'header.php'; ?>
+
 
 
 <body>
     <div class="page-wrapper">
         <!-- Navbar Section -->
-        <?php include 'nav.php'; ?>
+
 
         <div class="container">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="fw-bold my-4 h4">
-                <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a class="text-decoration-none" href="./index.php">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">login</li>
-                </ol>
-            </nav>
             <div class="d-flex flex-column gap-3 account-form mx-auto mt-5">
                 <form class="form">
                     <div class="form-items">
@@ -36,17 +30,24 @@
                             <input type="password" class="form-control" id="password" required>
                         </div>
                     </div>
+                    <div style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9;">
+                        <label for="role">Select Type:</label>
+                        <select name="role" id="role" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+                            <option value="user" name="user" >User</option>
+                            <option value="admin" name="admin" >Admin</option>
+                        </select>
+                    </div>
                     <button type="submit" class="btn btn-primary">Create account</button>
                 </form>
                 <div class="d-flex justify-content-center gap-2">
-                    <span>already have an account?</span><a class="link" href="./login.php"> login</a>
+                    <span>already have an account?</span><a class="link" href="./../public/index.php?page=login"> login</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer Section -->
-    <?php include 'footer.php'; ?>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
         integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
