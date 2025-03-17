@@ -28,7 +28,7 @@ switch ($page) {
         require "../views/doctors/reservation.php";
         break;
     case "logout":
-        require "../controlle/logout.php";
+        require "../controller/logout.php";
         break;
     // default:
     //     require "views/404.php"; 

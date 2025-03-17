@@ -6,7 +6,7 @@ class CreateAppointmentTable
     public function up($conn)
     {
         
-        $sql = "CREATE TABLE appointment (
+        $sql = "CREATE TABLE IF NOT EXISTS appointment (
         id INT PRIMARY KEY AUTO_INCREMENT,
         patient_name VARCHAR(100) NOT NULL,
         phone VARCHAR(20) NOT NULL,
